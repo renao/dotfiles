@@ -6,7 +6,6 @@ fi
 source ~/.bash/common
 source ~/.bash/prompt
 source ~/.bash/git
-source ~/.bash/zilium
 source ~/.bash/rvm
 source ~/.bash/ruby
 source ~/.bash/screen

@@ -17,8 +17,8 @@ alias gfa='git fetch --all'
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 
 neogit() {
-  git config user.name "Peter Suschlik" 
-  git config user.email "ps@neopoly.de" 
+  git config user.name "Andreas Busold"
+  git config user.email "ab@neopoly.de"
   echo -n "Name: " 
   git config user.name
   echo -n "E-Mail: " 
@@ -27,8 +27,8 @@ neogit() {
 
 
 pgit() {
-  git config user.name "Peter Suschlik" 
-  git config user.email "peter@suschlik.de" 
+  git config user.name "Andreas Busold"
+  git config user.email "an.bu@gmx.net"
   echo -n "Name: " 
   git config user.name
   echo -n "E-Mail: " 
