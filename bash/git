@@ -1,6 +1,7 @@
 alias gb='git branch -v'
 alias gba='gb -a'
 alias gc='git commit -v'
+alias gco='git checkout'
 alias gca='gc -a'
 alias gd='git diff'
 alias gdc='git diff --cached'
