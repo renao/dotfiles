@@ -16,22 +16,3 @@ alias gcd='git svn dcommit'
 alias gr='git grep'
 alias gfa='git fetch --all'
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
-
-neogit() {
-  git config user.name "Andreas Busold"
-  git config user.email "ab@neopoly.de"
-  echo -n "Name: " 
-  git config user.name
-  echo -n "E-Mail: " 
-  git config user.email
-}
-
-
-pgit() {
-  git config user.name "Andreas Busold"
-  git config user.email "an.bu@gmx.net"
-  echo -n "Name: " 
-  git config user.name
-  echo -n "E-Mail: " 
-  git config user.email
-}
