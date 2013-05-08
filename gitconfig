@@ -23,7 +23,7 @@
   grep = auto
 
 [github]
-  user = splattael
+  user = renao
 
 [core]
   excludesfile = ~/.gitexcludes 
