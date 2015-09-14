@@ -56,3 +56,7 @@
 
 [url "git@git.zilium.de:"]
   insteadOf = z:
+[user]
+	email = me@renao.de
+[useruser]
+	name = René Wernicke
