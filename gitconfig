@@ -45,6 +45,9 @@
 [push]
   default = current
 
+[merge]
+  ff = no
+
 [url "git://github.com/"]
   insteadOf = gh:
 
