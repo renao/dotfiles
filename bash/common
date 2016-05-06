@@ -2,8 +2,8 @@
 alias wi="whois -h whois.thur.de"
 
 # common
-#export EDITOR=vim
-export EDITOR=subl
+export EDITOR=vim
+#export EDITOR=subl
 export PATH="$PATH:$HOME/bin"
 
 alias neo="ssh ps@office.neopoly.de"
