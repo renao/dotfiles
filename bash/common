@@ -6,4 +6,4 @@ export EDITOR=vim
 #export EDITOR=subl
 export PATH="$PATH:$HOME/bin"
 
-alias neo="ssh ps@office.neopoly.de"
+alias neo="ssh rw@office.neopoly.de"
