@@ -54,11 +54,8 @@
 [url "git@github.com:"]
   insteadOf = wgh:
 
-[url "git@office.neopoly.de:"]
-  insteadOf = neo:
-
 [url "git@git.zilium.de:"]
   insteadOf = z:
 [user]
-	name = René Wernicke
-	email = rw@neopoly.de
+	name = René Siemer
+	email = git@renao.de
