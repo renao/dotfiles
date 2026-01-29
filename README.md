@@ -1,15 +1,9 @@
-# Personal dotfiles
+# Personal dotfiles // 2026 edition
 
 ## Install
 
-    git clone git://github.com/renao/dotfiles ~/.dotfiles
+```bash
+    git clone https://codeberg.org/renao/dotfiles.git
     cd ~/.dotfiles
-    rake install
-  
-## Dependencies
-
-* [Rake](https://github.com/ruby/rake "Rake")
-
-## Stolen from
-
-* [shlub] (https://github.com/shlub/dotfiles)
+    ./install_dotfiles.sh
+```

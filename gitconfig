@@ -1,20 +1,12 @@
+[init]
+  defaultBranch = main
+
 [alias]
   co = checkout
   unstage = reset HEAD
   lg = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %C(bold)%s %Creset%C(white)%cn%Creset %C(green)%cr' --abbrev-commit --date=relative
   undo = reset --soft HEAD^
   count = shortlog -sn
-
-  # merging
-  md = !"git co develop && git pull && git co master && git pull && git merge develop && git push && git co develop"
-  mp = !"git co develop && git pull && git co preview && git pull && git merge develop && git push && git co develop" 
-
-  # zilium
-  pu = !"git fetch origin -v; git fetch remote -v; git merge remote/master"
-  plz = !"git fetch origin -v && git fetch zilium -v && git merge zilium/master"
-  puz = !"git push origin master && git push origin zilium"
-  cp = cherry-pick
-  latest = for-each-ref --sort=-committerdate --format='%(committerdate:iso8601)%09%(objectname:short)      %(refname:short) | %(authorname)'
 
 [color]
   branch = auto
@@ -26,21 +18,15 @@
   user = renao
 
 [core]
-  excludesfile = ~/.gitexcludes 
+  excludesfile = ~/.gitexcludes
 	editor = vim
-#  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 
 [giggle]
-	main-window-maximized = true
-	main-window-geometry = 0x0+0+0
-	main-window-view = HistoryView
-	history-view-vpane-position = 412
-	file-view-vpane-position = 458
-
-[rerere]
-	enabled = true
-[branch]
-	autosetuprebase = always
+  main-window-maximized = true
+  main-window-geometry = 0x0+0+0
+  main-window-view = HistoryView
+  history-view-vpane-position = 412
+  file-view-vpane-position = 458
 
 [push]
   default = current
@@ -48,14 +34,10 @@
 [merge]
   ff = no
 
-[url "git://github.com/"]
-  insteadOf = gh:
-
-[url "git@github.com:"]
-  insteadOf = wgh:
-
-[url "git@git.zilium.de:"]
-  insteadOf = z:
 [user]
 	name = René Siemer
 	email = git@renao.de
+  signingkey = Git Commit Signing Key
+  
+[commit]
+  gpgsign = true

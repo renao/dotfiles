@@ -1,29 +1,31 @@
+# .bashrc
+
 # Source global definitions
-if [ -f /etc/bash.bashrc ]; then
-	. /etc/bash.bashrc
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
 fi
 
 source ~/.bash/common
 source ~/.bash/prompt
 source ~/.bash/git
-source ~/.bash/rvm
-source ~/.bash/ruby
-source ~/.bash/screen
 
-if [ "$(domainname)" = "NEOPOLY" ]; then
-  source ~/.bash/neopoly
-else
-  source ~/.bash/private
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
+export PATH
 
-# use .localrc for settings specific to one system
-if [ -f ~/.localrc ]; then
-  source ~/.localrc
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+    for rc in ~/.bashrc.d/*; do
+        if [ -f "$rc" ]; then
+            . "$rc"
+        fi
+    done
 fi
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+unset rc
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/rwernicke/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+alias code='flatpak run com.vscodium.codium'
