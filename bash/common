@@ -9,4 +9,5 @@ export GIT_COMMITTER_EMAIL="git@renao.de"
 export GIT_AUTHOR_NAME="René Siemer"
 export GIT_COMMITTER_NAME="René Siemer"
 
-alias code="flatpak run com.vscodium.codium"
+alias code="flatpak run org.kde.kate"
+alias kate="flatpak run org.kde.kate"

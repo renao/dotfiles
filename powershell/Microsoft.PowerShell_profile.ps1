@@ -17,11 +17,11 @@ function gpsh { git push -v }
 function gc { git commit -v }
 function c { cd $devel }
 
-# Set-Alias für VSCodium
-function code { flatpak run com.vscodium.codium $args }
-
 # Set-Alias für Vivaldi
 function vivaldi { flatpak run com.vivaldi.Vivaldi $args }
+# Set-Alias for Kate
+function kate { flatpak run org.kde.kate $args }
+function code { flatpak run org.kde.kate $args }
 
 
 # Adding git info about the current git repository by using posh-git module
