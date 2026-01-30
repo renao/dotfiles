@@ -28,4 +28,5 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-alias code='flatpak run com.vscodium.codium'
+cd $DEVEL_PATH
+ls -la
