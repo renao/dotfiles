@@ -2,9 +2,6 @@
 
 ## my root folder for development things
 $devel = "~/devel"
-# $sublimeExecutable = 'C:\Program Files\Sublime Text 3\sublime_text.exe'
-# $towerExecutable =  'C:\Users\r.wernicke\AppData\Local\Tower\Tower.exe'
-# $zoomExecutable = 'C:\Program Files\Zoom\bin\Zoom.exe'
 
 # Start in development folder
 Set-Location $devel
@@ -20,14 +17,11 @@ function gpsh { git push -v }
 function gc { git commit -v }
 function c { cd $devel }
 
-# Quickstart aliases
-# Set-Alias slime $sublimeExecutable
-# Set-Alias tower $towerExecutable
-Set-Alias vivaldi flatpak run com.vivaldi.Vivaldi
-# Set-Alias zoom $zoomExecutable
-
-# Set-Alias für Codium
+# Set-Alias für VSCodium
 function code { flatpak run com.vscodium.codium $args }
+
+# Set-Alias für Vivaldi
+function vivaldi { flatpak run com.vivaldi.Vivaldi $args }
 
 
 # Adding git info about the current git repository by using posh-git module
